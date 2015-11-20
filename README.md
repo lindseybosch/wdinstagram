@@ -1,15 +1,22 @@
 # wdinstagram
 
 
-Lindsey 
 
-=======
+# Lindsey 
+
+
 # Wayne was here
+
+
+# Jeffrey
+
 
 :tada:
 
 Enjoy… 
 
-WAYNE ENTERPRISES:
+WAYNE ENTERPRISES:   
+
 TEAM ROLL CALL:
+
 Chris
