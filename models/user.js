@@ -1,11 +1,23 @@
 var mongoose = require('mongoose'),
     debug    = require('debug')('app:models');
 
-var userSchema = new mongoose.Schema({
-  name:   String,
-  handle: String
+var commentSchema = new mongoose.Schema({
+  author: String,
+  text: String
 });
 
-var User = mongoose.model('User', userSchema);
+var entrySchema = new mongoose.Schema({
+  author: String,
+  photo_url: String,
+  date_taken: Date,
+  caption: String,
+  likes: Number,
+  comments: [commentSchema]
+});
 
-module.exports = User;
+var userSchema = new mongoose.Schema({
+  name:   String,
+  entries: [entrySchema]
+});
+
+module.exports = mongoose.model('User', userSchema);
